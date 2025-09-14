@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <title>Зворотний зв'язок</title>
+    <link rel="icon" type="image/png" href="/media/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Зворотний зв'язок зі адміністрацією Святошина"
+    />
+    <meta name="keywords" content="зворотний зв'язок, Святошин, Київ" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/main.html">Головна</a>
+        <a href="/activity.html">Напрями діяльності</a>
+        <a href="/feedback.html">Зворотний зв'язок</a>
+        <button type="button">Перейти у власний кабінет</button>
+        <button type="button">Зареєструватись</button>
+      </nav>
+      <h1>Святошинська районна державна адміністрація</h1>
+      <img src="media/footer_logo.jpeg" height="200" />
+    </header>
+    <main>
+      <form method="post" accept-charset="utf-8 iso-8859-1">
+        <fieldset>
+          <legend>Персональна інформація</legend>
+          <label for="full-name">Прізвище та ім'я</label>
+          <input
+            name="full-name"
+            id="full-name"
+            type="text"
+            placeholder="Ваше ім'я"
+            required
+          />
+          <br />
+          <label for="email">Електронна пошта</label>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="E-mail"
+            required
+            pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+          />
+          <br />
+          <label for="age">Вік</label>
+          <input name="age" id="age" type="number" /> <br />
+          <label for="education">Освіта</label>
+          <p name="education" id="education">
+            <input
+              type="radio"
+              name="education-level"
+              id="complete"
+              value="complete"
+            />
+            <label for="complete">повна</label><br />
+            <input
+              type="radio"
+              name="education-level"
+              id="incomplete"
+              value="incomplete"
+              checked
+            />
+            <label for="incomplete">неповна</label><br />
+            <input
+              type="radio"
+              name="education-level"
+              id="higher"
+              value="higher"
+            />
+            <label for="higher">вища</label><br />
+            <input
+              type="radio"
+              name="education-level"
+              id="vocational"
+              value="vocational"
+            />
+            <label for="vocational">професійна</label><br />
+          </p>
+        </fieldset>
+        <br />
+        <label for="feedback-purpose">Мета зворотного зв'язку</label>
+        <!-- <input name="feedback-purpose" id="feedback-purpose" type="text" /> -->
+        <select name="feedback-purpose" id="feedback-purpose">
+          <option value="cooperation">співпраця</option>
+          <option value="complaint">скарга на порушення права власності</option>
+          <option value="offer" selected>пропозиція</option>
+          <option value="error">наявність помилки</option>
+        </select>
+        <br />
+        <label for="details">Детально</label><br />
+        <textarea
+          name="details"
+          id="details"
+          cols="30"
+          rows="10"
+          placeholder="Детальна інформація"
+        ></textarea>
+        <br />
+        <label for="consent">Я погоджуюсь на обробку моєї інформації</label>
+        <input name="consent" id="consent" type="checkbox" /><br />
+        <button type="submit" name="send" id="send" formtarget="_blank">
+          <b>Відправити</b>
+        </button>
+      </form>
+    </main>
+    <footer>
+      <p>Адреса: <i>03115, м. Київ-115, пр-т Берестейський, 97</i></p>
+      <p>Телефони: <i>(044) 424-66-66, (044) 424-30-06</i></p>
+    </footer>
+  </body>
+</html>
