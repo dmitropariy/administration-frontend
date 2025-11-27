@@ -55,7 +55,8 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1em;
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background-color: #667eea;
     border-radius: 0.8em;
     padding: 1em 1.5em;
 }
